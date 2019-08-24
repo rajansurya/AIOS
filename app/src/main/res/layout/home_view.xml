@@ -21,8 +21,8 @@
             android:layout_margin="10dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="5dp"
-            android:background="@color/colorbanner"
-            android:padding="3dp"
+            android:background="@drawable/round_tag"
+            android:padding="5dp"
             android:text="GLAUCOKNOW 2019"
             android:textColor="@color/white"
             android:textSize="16sp" />
@@ -221,10 +221,9 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@+id/reg"
                     android:layout_centerHorizontal="true"
                     android:gravity="center"
-                    android:minLines="2"
+                    android:minLines="1"
                     android:text="@string/schedule"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
