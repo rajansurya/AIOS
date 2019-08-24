@@ -23,89 +23,27 @@ import java.lang.reflect.Field
 import java.util.*
 
 
-class Home : Fragment(), View.OnClickListener {
-
-    override fun onClick(v: View?) {
-        when (v?.id) {
-         /*   R.id.abstracttx -> {
-//                var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
-//                startActivity(intent)
-                startActivity(Intent(activity, Venue::class.java))
-            }
-            R.id.program -> {
-//                var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
-//                startActivity(intent)
-                startActivity(Intent(activity!!, Abstract::class.java))
-            }
-            R.id.registration -> {
-//                var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://eventreg.icegroupindia.com/doscon18/"))
-//                startActivity(intent)
-                var prefs: SharedPreferences = activity!!.getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);
-                var restoredText = prefs.getString("DATA", null);
-                if (!TextUtils.isEmpty(restoredText)) {
-                    var intent = Intent(activity, TicketDetail::class.java)
-                    intent.putExtra("DATA", restoredText)
-                    startActivity(intent)
-                }else{
-                    var intent = Intent(activity, Login::class.java)
-                    startActivity(intent)
-                }
-            }
-            R.id.notification -> {
-                startActivity(Intent(activity!!, NotificationAPI::class.java))
-            }*/
-
-        }
-    }
-
+class Home : Fragment() {
     companion object {
         fun newInstance(): Home {
             return Home()
         }
     }
-
-    var images: IntArray = intArrayOf( R.drawable.copy2,R.drawable.copy3)
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        var view = inflater.inflate(R.layout.home_view, container, false)
-        return view
-    }
-
     var currentPage = 0
     var timer: Timer? = null
     val DELAY_MS: Long = 1000//delay in milliseconds before task is to be executed
     val PERIOD_MS: Long = 4000
     var NUM_PAGES: Int = 2
+    var images: IntArray = intArrayOf(R.drawable.copy2, R.drawable.copy3)
+
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        var view = inflater.inflate(R.layout.home_view, container, false)
+        return view
+    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-      /*  Handler().postDelayed(Runnable {
-            var height: Int = parent_cube.height
-            var width: Int = parent_cube.width
-            val params = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
-            params.leftMargin = width / 3 - abstracttx.width
-            params.topMargin = height / 2 - abstracttx.height / 2
-            abstracttx.layoutParams = params
 
-            val params1 = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
-            params1.leftMargin = width / 2 + registration.width / 4
-            params1.topMargin = height / 2 - registration.height
-            registration.layoutParams = params1
-
-            val params2 = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
-            params2.leftMargin = width / 2 - notification.width / 2
-            params2.topMargin = height / 4 - abstracttx.height / 2
-            notification.layoutParams = params2
-
-            val params3 = RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WRAP_CONTENT, RelativeLayout.LayoutParams.WRAP_CONTENT)
-            params3.leftMargin = width / 2 - program.width / 2
-            params3.topMargin = (height / 3) * 2
-            program.layoutParams = params3
-
-        }, 200)*/
-
-//        registration.setOnClickListener(this)
-//        abstracttx.setOnClickListener(this)
-//        program.setOnClickListener(this)
-//        notification.setOnClickListener(this)
         var adpter = Carousal(context!!, images)
         carousal.adapter = adpter
         val handler = Handler()
@@ -138,10 +76,7 @@ class Home : Fragment(), View.OnClickListener {
 
     }
 
-    override fun onPause() {
-        super.onPause()
 
-    }
 
     internal class Carousal(var context: Context, var images: IntArray) : PagerAdapter() {
         lateinit var layoutInflater: LayoutInflater
@@ -164,9 +99,10 @@ class Home : Fragment(), View.OnClickListener {
         }
 
         override fun destroyItem(container: ViewGroup, position: Int, `object`: Any) {
-           // super.destroyItem(container, position, `object`)
+            // super.destroyItem(container, position, `object`)
             (container as ViewPager).removeView(`object` as View)
         }
+
         override fun isViewFromObject(view: View, `object`: Any): Boolean {
             return view === `object` as RelativeLayout
         }

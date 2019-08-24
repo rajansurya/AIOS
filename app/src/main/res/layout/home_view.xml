@@ -93,7 +93,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:gravity="center"
             android:weightSum="3">
 
@@ -102,11 +101,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/firstcolor"
                 android:gravity="center"
                 android:onClick="onClickitem"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="7dp">
 
                 <ImageView
+                    android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/home_2" />
@@ -115,7 +117,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="FACULTY"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -123,11 +125,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/secondcolor"
                 android:gravity="center"
                 android:onClick="onClickitem"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="7dp">
 
                 <ImageView
+                    android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/home_3" />
@@ -136,7 +141,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="REGISTRATION"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -144,11 +149,14 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/thirdcolor"
                 android:gravity="center"
                 android:onClick="onClickitem"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="7dp">
 
                 <ImageView
+                    android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/home_4" />
@@ -157,14 +165,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="HIGHLIGHT"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:gravity="center"
             android:weightSum="3">
 
@@ -173,9 +180,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/forthcolor"
                 android:gravity="center"
                 android:onClick="onClickitem"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="7dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -186,7 +195,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="PROGRAM"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
             </LinearLayout>
 
             <LinearLayout
@@ -195,9 +204,11 @@
                 android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_weight="1"
+                android:background="@color/fivethcolor"
                 android:gravity="center"
                 android:onClick="onClickitem"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="7dp">
 
                 <ImageView
                     android:id="@+id/reg"
@@ -215,7 +226,7 @@
                     android:gravity="center"
                     android:minLines="2"
                     android:text="@string/schedule"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -224,9 +235,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="@color/sixthcolor"
                 android:gravity="center"
                 android:onClick="onClickitem"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:padding="7dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -237,9 +250,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="VENUE"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/white" />
             </LinearLayout>
         </LinearLayout>
+
     </LinearLayout>
 
     <RelativeLayout

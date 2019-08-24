@@ -16,4 +16,10 @@
     <color name="org_color">#bbda5d</color>
     <color name="trans">#00000000</color>
     <color name="colorbanner">#64AAE7</color>
+    <color name="firstcolor">#1D8ACF</color>
+    <color name="secondcolor">#D94249</color>
+    <color name="thirdcolor">#DCAB2A</color>
+    <color name="forthcolor">#EA454E</color>
+    <color name="fivethcolor">#03938A</color>
+    <color name="sixthcolor">#9C4AD3</color>
 </resources>
