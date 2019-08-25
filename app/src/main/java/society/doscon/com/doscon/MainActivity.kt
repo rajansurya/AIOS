@@ -25,7 +25,10 @@ import android.view.animation.AnimationUtils
 import android.widget.ImageView
 import com.skyfishjy.library.RippleBackground
 import android.content.DialogInterface
+import android.graphics.Color
 import android.opengl.Visibility
+import android.support.v4.view.GravityCompat
+import android.support.v4.widget.DrawerLayout
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.webkit.WebChromeClient
@@ -84,6 +87,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
         } else {
             imageView.visibility = View.GONE
         }*/
+        drawer_layout.setScrimColor(Color.TRANSPARENT)
+        drawer_layout.addDrawerListener(Drawerlayout(content_View));
+
     }
 
 
@@ -100,7 +106,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             }
             R.id.officebear4 -> {
 //                startActivity(Intent(this, Abstract::class.java))
-               var webpagesLinear: WebView =WebView(this)
+                var webpagesLinear: WebView = WebView(this)
                 webpagesLinear.getSettings().setJavaScriptEnabled(true);
                 webpagesLinear.getSettings().setSupportMultipleWindows(true)
                 webpagesLinear.setWebChromeClient(object : WebChromeClient() {

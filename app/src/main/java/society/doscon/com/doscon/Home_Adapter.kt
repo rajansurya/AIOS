@@ -49,7 +49,7 @@ internal class Home_Adapter(var mContext: Context, var service: ArrayList<String
         val requestQueue = Volley.newRequestQueue(mContext)
         val request = ImageRequest(service.get(position),
                 Response.Listener { bitmap -> holder?.home_icon?.setImageBitmap(bitmap) }, 0, 0, null,
-                Response.ErrorListener { holder?.home_icon?.setImageResource(R.drawable.ic_launcher_foreground) })
+                Response.ErrorListener { holder?.home_icon?.setImageResource(R.mipmap.ic_launcher_foreground) })
         requestQueue.add(request)
         println("POS  "+position)
     }

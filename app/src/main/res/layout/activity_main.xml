@@ -2,10 +2,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
+    android:background="@drawable/copy2"
     android:layout_height="match_parent">
 
     <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/content_View"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -18,9 +20,9 @@
 
             <android.support.design.widget.TabLayout
                 android:id="@+id/tabs"
-                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:visibility="gone"
                 app:tabGravity="fill"
                 app:tabMode="fixed" />
         </android.support.design.widget.AppBarLayout>
@@ -48,20 +50,20 @@
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginBottom="7dp"
                 android:layout_marginTop="25dp"
+                android:layout_marginBottom="7dp"
                 android:contentDescription="@string/app_name"
                 android:padding="1dp"
-                android:src="@mipmap/appicon" />
+                android:src="@mipmap/cirlce_appicon_round" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textStyle="bold"
-                android:visibility="gone"
-                android:textColor="@color/black"
                 android:gravity="center_horizontal"
-                android:text="ISCKRS MEET 2018" />
+                android:text="ISCKRS MEET 2018"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="gone" />
             <!--<View
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
