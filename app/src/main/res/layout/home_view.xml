@@ -259,6 +259,8 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
+        android:layout_below="@+id/middle"
+        android:gravity="bottom"
         android:layout_alignParentBottom="true">
 
 

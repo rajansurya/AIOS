@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/menubackground"
     android:layout_width="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@android:color/transparent"
     android:layout_height="wrap_content">
 
     <TextView
@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingBottom="5dp"
-        android:textColor="@color/white"
+        android:textColor="@color/bordorcolor"
         android:paddingLeft="15dp"
         android:paddingTop="5dp"
         android:textSize="16sp" />
