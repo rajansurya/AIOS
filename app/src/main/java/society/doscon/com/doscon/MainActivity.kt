@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this, Commitee::class.java))
             }
             R.id.officebear2 -> {
-//                startActivity(Intent(this, RegistrationActivity::class.java))
+                startActivity(Intent(this, RegistrationActivity::class.java))
             }
             R.id.officebear3 -> {
                 startActivity(Intent(this, Highlight::class.java))

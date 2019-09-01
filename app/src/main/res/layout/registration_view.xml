@@ -61,7 +61,7 @@
                             android:gravity="center"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:text="30.06.2019"
+                            android:text="UPTO 30/06/2019"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
 
@@ -72,7 +72,7 @@
                             android:gravity="center"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:text="28.07.2019"
+                            android:text="01/07/2019 to 05/09/2019"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
 
@@ -83,7 +83,7 @@
                             android:gravity="center"
                             android:paddingLeft="10dp"
                             android:paddingRight="10dp"
-                            android:text="SPOT"
+                            android:text="Spot Registration"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
 
@@ -161,7 +161,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Member Delegate"
+                            android:text="GSI Member"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -226,7 +226,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Member Spouse"
+                            android:text="Non Members"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -291,7 +291,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Member Resident**"
+                            android:text="Student / Spouse"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -349,7 +349,8 @@
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:minHeight="40dp">
+                        android:minHeight="40dp"
+                        android:visibility="gone">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -417,7 +418,7 @@
                             android:layout_height="40dp"
                             android:background="@drawable/rect_blue"
                             android:gravity="center"
-                            android:text="Non Member Delegate"
+                            android:text="Charges per Wet Lab"
                             android:textColor="@color/white"
                             android:textSize="16sp"
                             android:textStyle="bold" />
@@ -476,7 +477,8 @@
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:minHeight="40dp">
+                        android:minHeight="40dp"
+                        android:visibility="gone">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -541,7 +543,8 @@
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:minHeight="40dp">
+                        android:minHeight="40dp"
+                        android:visibility="gone">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -606,8 +609,10 @@
 
                     <TableRow
                         android:layout_width="match_parent"
+
                         android:layout_height="40dp"
-                        android:minHeight="40dp">
+                        android:minHeight="40dp"
+                        android:visibility="gone">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -735,7 +740,8 @@
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:minHeight="40dp">
+                        android:minHeight="40dp"
+                        android:visibility="gone">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -771,6 +777,7 @@
                             android:textColor="@color/white"
                             android:textSize="15sp"
                             android:textStyle="bold" />
+
                         <TextView
                             android:id="@+id/r83"
                             android:layout_width="wrap_content"
@@ -781,7 +788,6 @@
                             android:paddingRight="10dp"
                             android:textColor="@color/white"
                             android:textStyle="bold" />
-
 
 
                         <TextView
@@ -801,7 +807,8 @@
                     <TableRow
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
-                        android:minHeight="40dp">
+                        android:minHeight="40dp"
+                        android:visibility="gone">
 
                         <TextView
                             android:layout_width="match_parent"

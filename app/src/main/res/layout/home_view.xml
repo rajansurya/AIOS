@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:background="@color/white"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <RelativeLayout
@@ -105,14 +105,13 @@
                 android:background="@color/firstcolor"
                 android:gravity="center"
                 android:onClick="onClickitem"
-                android:orientation="vertical"
-                android:padding="7dp">
+                android:orientation="vertical">
 
                 <ImageView
-                    android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home_2" />
+                    android:layout_margin="10dp"
+                    android:src="@drawable/rsz_faculty" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -133,10 +132,10 @@
                 android:padding="7dp">
 
                 <ImageView
-                    android:layout_marginTop="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home_3" />
+                    android:layout_margin="10dp"
+                    android:src="@drawable/rsz_registration" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -157,10 +156,10 @@
                 android:padding="7dp">
 
                 <ImageView
-                    android:layout_margin="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home_4" />
+                    android:layout_margin="10dp"
+                    android:src="@drawable/rsz_highlights" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -190,7 +189,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home_5" />
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/rsz_programme" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -217,7 +217,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
                     android:layout_marginTop="10dp"
-                    android:src="@drawable/noti82" />
+                    android:src="@drawable/rsz_scheduled" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -244,7 +244,8 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/home_7" />
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/rsz_venue" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -260,8 +261,8 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_below="@+id/middle"
-        android:gravity="bottom"
-        android:layout_alignParentBottom="true">
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
 
 
         <!-- <ImageView

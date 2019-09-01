@@ -1,8 +1,6 @@
 <resources>
     <string name="app_name">GSI</string>
-    <string name="kwonyourregis">K/W YOUR REGISTRATION</string>
     <string name="schedule">MY SCHEDULED</string>
-    <string name="expadv">.Exploring Recent \nAdvances\u2022</string>
     <string name="invitation">
 <![CDATA[
 <html>
@@ -51,7 +49,6 @@
 </string>
 
     <string name="rupy"><![CDATA[ <font color=#FCA723>₹</font> ]]></string>
-    <string name="doller"><![CDATA[ <font color=#FCA723>US$</font> ]]></string>
 
     <string name="imp_note">
         <![CDATA[
@@ -136,10 +133,11 @@
         <item>FACULTY</item>
         <item>VENUE</item>
         <item>OFFICE BEARERS</item>
+        <item>SHUTTLE</item>
         <item>K/W YOUR REGISTRATION</item>
         <item>JOIN GSI</item>
         <item>CONTACT</item>
-        <item>NOTIFICATION</item>
+        <item>UPDATES</item>
         <item>LOGIN</item>
     </array>
     <string name="venue">

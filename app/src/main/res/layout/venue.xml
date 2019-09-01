@@ -31,7 +31,7 @@
                 android:padding="1dp"
                 android:scaleType="fitXY"
                 android:visibility="gone"
-                android:src="@drawable/building" />
+                android:src="@drawable/rsz_venue" />
 
             <WebView
                 android:id="@+id/venue"

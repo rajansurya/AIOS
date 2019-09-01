@@ -50,26 +50,26 @@ class Registration : Fragment() {
         title_name.text = "REGISTRATION"
         back.setOnClickListener { activity?.finish() }
        // r1.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
-        r2.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
-        r3.text = Html.fromHtml(resources.getString(R.string.rupy) + 1200 + "*")
-        r4.text = Html.fromHtml(resources.getString(R.string.rupy) + 2000 + "*")
+        r2.text = Html.fromHtml(resources.getString(R.string.rupy) + 6500 + "*")
+        r3.text = Html.fromHtml(resources.getString(R.string.rupy) + 7500 + "*")
+        r4.text = Html.fromHtml(resources.getString(R.string.rupy) + 9000 + "*")
 
-        r21.text = Html.fromHtml(resources.getString(R.string.rupy) + 500 + "*")
+        r21.text = Html.fromHtml(resources.getString(R.string.rupy) + 7500 + "*")
 //        r22.text = Html.fromHtml(resources.getString(R.string.rupy) + 500 + "*")
-        r23.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
-        r24.text = Html.fromHtml(resources.getString(R.string.rupy) + 1500 + "*")
+        r23.text = Html.fromHtml(resources.getString(R.string.rupy) + 8500 + "*")
+        r24.text = Html.fromHtml(resources.getString(R.string.rupy) + 10000 + "*")
 
-        r31.text = Html.fromHtml(resources.getString(R.string.rupy) + 500 + "*")
+        r31.text = Html.fromHtml(resources.getString(R.string.rupy) + 4500 + "*")
 //        r32.text = Html.fromHtml(resources.getString(R.string.rupy) + 500 + "*")
-        r33.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
-        r34.text = Html.fromHtml(resources.getString(R.string.rupy) + 1500 + "*")
+        r33.text = Html.fromHtml(resources.getString(R.string.rupy) + 5500 + "*")
+        r34.text = Html.fromHtml(resources.getString(R.string.rupy) + 7000 + "*")
 
-        r41.text = Html.fromHtml(resources.getString(R.string.rupy) + 1500 + "*")
+        r41.text = Html.fromHtml(resources.getString(R.string.rupy) + 600 + "*")
 //        r42.text = Html.fromHtml(resources.getString(R.string.rupy) + 1500+ "*")
-        r43.text = Html.fromHtml(resources.getString(R.string.rupy) + 1800 + "*")
-        r44.text = Html.fromHtml(resources.getString(R.string.rupy) + 2000 + "*")
+        r43.text = Html.fromHtml(resources.getString(R.string.rupy) + 800 + "*")
+        r44.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
 
-        r51.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
+        /*r51.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
 //        r52.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
         r53.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
         r54.text = Html.fromHtml(resources.getString(R.string.rupy) + 1000 + "*")
@@ -89,7 +89,7 @@ class Registration : Fragment() {
         r81.text = Html.fromHtml(resources.getString(R.string.doller) + 100 + "*")
 //        r72.text = Html.fromHtml(resources.getString(R.string.rupy) + 1800 + "*")
         r83.text = Html.fromHtml(resources.getString(R.string.doller) + 125 + "*")
-        r84.text = Html.fromHtml(resources.getString(R.string.doller) + 150 + "*")
+        r84.text = Html.fromHtml(resources.getString(R.string.doller) + 150 + "*")*/
 
         webpagesLinear = view.findViewById(R.id.webpagesLinear)
         webpagesLinear.getSettings().setJavaScriptEnabled(true);
