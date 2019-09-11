@@ -25,7 +25,7 @@ class Login : Activity(), View.OnClickListener, SignUpAPICall.CallBackToClass {
                         if (status_api.equals("true")) {
                             val requestJson = JSONObject()
                             requestJson.put("registrationId", reader.getString("Registration Id"))
-                            val URL = "http://isckrs.com/api/reg-isckrs.php"
+                            val URL = "https://glaucomasociety.in/api/reg-gsi.php"
                             SignUpAPICall(URL, 0, "REGISTRATION", this@Login, this@Login).execute(requestJson)
 
                         } else {
@@ -58,7 +58,7 @@ class Login : Activity(), View.OnClickListener, SignUpAPICall.CallBackToClass {
                     val requestJson = JSONObject()
                     requestJson.put("uemail", etUserName.text)
                     requestJson.put("umobile", etPassword.text)
-                    val URL = "http://isckrs.com/api/login-isckrs.php"
+                    val URL = "https://glaucomasociety.in/api/login-gsi.php"
                     SignUpAPICall(URL, 0, "OAUTHTOKEN", this@Login, this@Login).execute(requestJson)
                 }
             }
