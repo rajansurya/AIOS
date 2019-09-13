@@ -11,6 +11,12 @@ class ShowPDF : Activity() {
         setContentView(R.layout.show_pdf)
         title_name.text = "SHUTTLE"
         back.setOnClickListener { this@ShowPDF.finish() }
-        pdfv.fromAsset("shuttleservice.pdf").load()
+        if (intent.getStringExtra("which").equals("programm")){
+            pdfv.fromAsset("scientificprogramme.pdf").load()
+            title_name.text = "PROGRAM"
+        }else{
+            pdfv.fromAsset("shuttleservice.pdf").load()
+        }
+
     }
 }

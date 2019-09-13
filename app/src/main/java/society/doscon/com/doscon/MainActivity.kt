@@ -105,8 +105,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 startActivity(Intent(this, Highlight::class.java))
             }
             R.id.officebear4 -> {
+                var inyeny: Intent = Intent(this, ShowPDF::class.java)
+                inyeny.putExtra("which", "programm")
+                startActivity(inyeny)
 //                startActivity(Intent(this, Abstract::class.java))
-                var webpagesLinear: WebView = WebView(this)
+              /*  var webpagesLinear: WebView = WebView(this)
                 webpagesLinear.getSettings().setJavaScriptEnabled(true);
                 webpagesLinear.getSettings().setSupportMultipleWindows(true)
                 webpagesLinear.setWebChromeClient(object : WebChromeClient() {
@@ -120,7 +123,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                     }
                 })
                 val pdf = "http://isckrs.com/Scientific-Programme.pdf"
-                webpagesLinear.loadUrl("http://docs.google.com/gview?embedded=true&url="+pdf)
+                webpagesLinear.loadUrl("http://docs.google.com/gview?embedded=true&url="+pdf)*/
             }
             R.id.officebear5 -> {
                 var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);
@@ -188,7 +191,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             }
             6 -> {
                 var inyeny: Intent = Intent(this, ShowPDF::class.java)
-//                inyeny.putExtra("which", "join")
                 startActivity(inyeny)
             }
             7 -> {

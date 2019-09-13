@@ -22,6 +22,7 @@ class Highlight:FragmentActivity(){
         setContentView(R.layout.first_frgment_view)
 //        var view = inflater.inflate(R.layout.first_frgment_view, container, false)
         title_name.text="HIGHLIGHTS"
+        title_name.setTextColor(resources.getColor(R.color.highlightcolor));
         back.setOnClickListener { this@Highlight.finish() }
         webpagesLinear=findViewById(R.id.webpagesLinear)
         webpagesLinear.getSettings().setJavaScriptEnabled(true);
