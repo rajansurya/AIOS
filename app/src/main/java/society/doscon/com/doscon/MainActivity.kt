@@ -191,6 +191,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             }
             6 -> {
                 var inyeny: Intent = Intent(this, ShowPDF::class.java)
+                inyeny.putExtra("which", "")
                 startActivity(inyeny)
             }
             7 -> {

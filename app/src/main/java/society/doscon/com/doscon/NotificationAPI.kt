@@ -49,7 +49,7 @@ class NotificationAPI : Activity(), SignUpAPICall.CallBackToClass {
 
         val requestJson = JSONObject()
         requestJson.put("registrationId", "")
-        val URL = "http://isckrs.com/api/notification-isckrs.php"
+        val URL = "https://glaucomasociety.in/api/notification-gsi.php"
         SignUpAPICall(URL, 0, "NOTIFICATION", this@NotificationAPI, this@NotificationAPI).execute(requestJson)
     }
 }
