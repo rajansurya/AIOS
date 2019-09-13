@@ -60,6 +60,7 @@
             android:screenOrientation="portrait" />
         <activity android:name=".Highlight" />
         <activity android:name=".Scheduled_Meeting" />
+        <activity android:name=".ShowPDF" />
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"

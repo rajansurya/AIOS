@@ -35,25 +35,10 @@ lateinit var context: Context
         title_name.text = "PROGRAM"
         back.setOnClickListener { this@Abstract.finish() }
         webpagesLinear = findViewById(R.id.webpagesLinear)
-        webpagesLinear.getSettings().setJavaScriptEnabled(true);
-//        webpagesLinear.getSettings().setBuiltInZoomControls(true);
-//        webpagesLinear.getSettings().setAllowFileAccessFromFileURLs(true)
-//        webpagesLinear.getSettings().setAllowUniversalAccessFromFileURLs(true)
-//        webpagesLinear.getSettings().setBuiltInZoomControls(true)
-//        webpagesLinear.getSettings().setSupportMultipleWindows(true);
-//        webpagesLinear.setWebChromeClient(MyWebChromeclient())
-//        webpagesLinear.getSettings().setPluginState(WebSettings.PluginState.ON);
-//        webpagesLinear.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
-//        webpagesLinear.setScrollBarStyle(WebView.SCROLLBARS_OUTSIDE_OVERLAY);
-//        webpagesLinear.setScrollbarFadingEnabled(true);
-//        webpagesLinear.getSettings().setDomStorageEnabled(true);
-//        webpagesLinear.getSettings().setLoadsImagesAutomatically(true);
-//        webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-//        progressbar.visibility = View.VISIBLE
-//        webpagesLinear.webViewClient=AppWebViewClients(progressbar)
-//        webpagesLinear.setWebViewClient(AppWebViewClients(progressbar))
+        /*webpagesLinear.getSettings().setJavaScriptEnabled(true);
         webpagesLinear.getSettings().setSupportMultipleWindows(true)
-        webpagesLinear.setWebChromeClient(object : WebChromeClient() {
+        webpagesLinear.webViewClient=WebViewClient()
+       *//* webpagesLinear.setWebChromeClient(object : WebChromeClient() {
             override fun onCreateWindow(view: WebView, dialog: Boolean, userGesture: Boolean, resultMsg: android.os.Message): Boolean {
                 val result = view.hitTestResult
                 val data = result.extra
@@ -62,12 +47,20 @@ lateinit var context: Context
                 context.startActivity(browserIntent)
                 return false
             }
-        })
+        })*//*
         val pdf = "http://isckrs.com/Scientific-Programme.pdf"
         webpagesLinear.loadUrl("http://drive.google.com/viewerng/viewer?embedded=true&url="+pdf)
-//        webpagesLinear.loadUrl("http://isckrs.com/Scientific-Programme.pdf");
+*/
 
+        webpagesLinear.getSettings().setJavaScriptEnabled(true)
+        webpagesLinear.getSettings().setPluginState(WebSettings.PluginState.ON)
 
+        //---you need this to prevent the webview from
+        // launching another browser when a url
+        // redirection occurs---
+        webpagesLinear.setWebViewClient(Callback())
+        val pdf = "http://isckrs.com/Scientific-Programme.pdf"
+        webpagesLinear.loadUrl("https://docs.google.com/viewer?url=http://isckrs.com/Scientific-Programme.pdf")
     }
 
     private inner class Callback : WebViewClient() {

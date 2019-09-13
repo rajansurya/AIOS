@@ -132,9 +132,8 @@
         <item>FACULTY</item>
         <item>VENUE</item>
         <item>OFFICE BEARERS</item>
-        <item>SHUTTLE</item>
         <item>K/W YOUR REGISTRATION</item>
-        <item>JOIN GSI</item>
+        <item>SHUTTLE</item>
         <item>CONTACT</item>
         <item>UPDATES</item>
         <item>LOGIN</item>
@@ -169,11 +168,11 @@
         <html>
  <head></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
-Contact Us
+<b>Contact Us:</b> </br>
 Glaucoma Society of India
-P D Hinduja National Hospital& MRCVeer Savarkar Marg, Mahim Mumbai 400016 (India)
-Tel: (022) 24447165 /7131)
-Email: secretary@glaucomasociety.in / office@glaucomasociety.in
+P D Hinduja National Hospital& </br>MRCVeer Savarkar Marg, Mahim Mumbai 400016 (India)</br></br>
+<b>Tel:</b> (022) 24447165 /7131)</br>
+<b>Email:<b/> secretary@glaucomasociety.in /</br> office@glaucomasociety.in
     </body>
 </html>
 

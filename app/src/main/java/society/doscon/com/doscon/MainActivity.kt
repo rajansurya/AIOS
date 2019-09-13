@@ -120,7 +120,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                     }
                 })
                 val pdf = "http://isckrs.com/Scientific-Programme.pdf"
-                webpagesLinear.loadUrl("https://www.glaucomasociety.in/program-schedule.php")
+                webpagesLinear.loadUrl("http://docs.google.com/gview?embedded=true&url="+pdf)
             }
             R.id.officebear5 -> {
                 var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);
@@ -187,8 +187,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                 }
             }
             6 -> {
-                var inyeny: Intent = Intent(this, Accomodation::class.java)
-                inyeny.putExtra("which", "join")
+                var inyeny: Intent = Intent(this, ShowPDF::class.java)
+//                inyeny.putExtra("which", "join")
                 startActivity(inyeny)
             }
             7 -> {

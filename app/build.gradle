@@ -27,6 +27,9 @@ android {
         // but continue the build even when errors are found:
         abortOnError false
     }
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
 }
 
 dependencies {
@@ -42,4 +45,5 @@ dependencies {
     implementation 'com.android.support:multidex:1.0.3'
     implementation 'com.google.code.gson:gson:2.7'
     implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation 'com.github.barteksc:android-pdf-viewer:2.8.2'
 }

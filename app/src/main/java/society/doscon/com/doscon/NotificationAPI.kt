@@ -36,7 +36,7 @@ class NotificationAPI : Activity(), SignUpAPICall.CallBackToClass {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.notificationlist)
-        title_name.text = "NOTIFICATION"
+        title_name.text = "UPDATES"
         back.setOnClickListener { this@NotificationAPI.finish() }
 
         generateticket = GenerateTicketAdapter(this@NotificationAPI, retailerList)
