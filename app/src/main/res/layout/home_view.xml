@@ -96,109 +96,6 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:weightSum="3">
-
-            <LinearLayout
-                android:id="@+id/officebear"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/firstcolor"
-                android:gravity="center"
-                android:onClick="onClickitem"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/rsz_faculty" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="FACULTY"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/officebear2"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/secondcolor"
-                android:gravity="center"
-                android:onClick="onClickitem"
-                android:orientation="vertical"
-                android:padding="7dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/rsz_registration" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="REGISTRATION"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/officebear3"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/thirdcolor"
-                android:gravity="center"
-                android:onClick="onClickitem"
-                android:orientation="vertical"
-                android:padding="7dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/rsz_highlights" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="HIGHLIGHT"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:weightSum="3">
-
-            <LinearLayout
-                android:id="@+id/officebear4"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@color/forthcolor"
-                android:gravity="center"
-                android:onClick="onClickitem"
-                android:orientation="vertical"
-                android:padding="7dp">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:src="@drawable/rsz_programme" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="PROGRAM"
-                    android:textColor="@color/white" />
-            </LinearLayout>
-
             <LinearLayout
                 android:id="@+id/officebear5"
                 android:layout_width="0dp"
@@ -230,6 +127,108 @@
                     android:textSize="12sp" />
             </LinearLayout>
 
+            <LinearLayout
+                android:id="@+id/officebear4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/forthcolor"
+                android:gravity="center"
+                android:onClick="onClickitem"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/rsz_programme" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PROGRAM"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/officebear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/firstcolor"
+                android:gravity="center"
+                android:onClick="onClickitem"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/shuttle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SHUTTLE"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/officebear3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/thirdcolor"
+                android:gravity="center"
+                android:onClick="onClickitem"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/rsz_highlights" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HIGHLIGHT"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/officebear2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/secondcolor"
+                android:gravity="center"
+                android:onClick="onClickitem"
+                android:orientation="vertical"
+                android:padding="7dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/rsz_registration" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="REGISTRATION"
+                    android:textColor="@color/white" />
+            </LinearLayout>
             <LinearLayout
                 android:id="@+id/officebear6"
                 android:layout_width="0dp"

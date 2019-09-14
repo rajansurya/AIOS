@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="57dp"
-    android:background="@color/bordorcolor">
+    android:background="@color/black">
 
     <ImageView
         android:id="@+id/back"
@@ -21,7 +21,6 @@
         android:paddingLeft="20dp"
         android:textColor="@color/white"
         android:textSize="17sp"
-
         android:textStyle="bold" />
 
     <TextView
@@ -29,7 +28,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/title_name"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@id/drawer_click"
         android:paddingLeft="20dp"
 
         android:textSize="15sp" />

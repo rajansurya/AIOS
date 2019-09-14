@@ -33,8 +33,8 @@ class Home : Fragment() {
     var timer: Timer? = null
     val DELAY_MS: Long = 1000//delay in milliseconds before task is to be executed
     val PERIOD_MS: Long = 4000
-    var NUM_PAGES: Int = 2
-    var images: IntArray = intArrayOf(R.drawable.copy2, R.drawable.copy3)
+    var NUM_PAGES: Int = 4
+    var images: IntArray = intArrayOf(R.drawable.slider1, R.drawable.slider2,R.drawable.slider3, R.drawable.slider4)
 
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {

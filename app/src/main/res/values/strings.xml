@@ -55,24 +55,20 @@
 <html>
  <head></head>
  <body style="color:black;font-size:16px;font-family:ariel;">
-<h4>Please read below before proceeding:</h4>
-<ul class="ml-20">
-  <li><i class="fa fa-angle-right"></i> For Spot Registration: Complete kit will be subject to availability.<br>
-    </li>
-  <li><i class="fa fa-angle-right"></i> Photo I-Card will be required at the time of collection of registration kit.<br>
-    </li>
-  <li><i class="fa fa-angle-right"></i> **Proof of residency required from HOD along with the registration form.<br>
-    </li>
-  <li><i class="fa fa-angle-right"></i> There will be no refund on cancellation of registration.<br>
-    </li>
-  <li><i class="fa fa-angle-right"></i> Wearing of identity badge is mandatory at all times.<br>
-    </li>
-  <li><i class="fa fa-angle-right"></i> Entry to Scientific Sessions &amp; Exhibition<br>
-    </li>
-  <li><i class="fa fa-angle-right"></i> Area will be Restricted to Registered Delegates only.</li>
-  <li><i class="fa fa-angle-right"></i> Lost badge will be replaced at the registration counter for a fee Rs. 200/-.<br>
-    </li>
-  <li><i class="fa fa-angle-right"></i> Pre-Registration will be closed on 30th June 2019.</li>
+<div class="bg115">
+                <p>If you cannot pay online, you may download the form. Fill and send us the printed form along with a DD payable at Delhi OR at Par cheque in the name of "Glaucoma Society of India" and send it to the following address.</p>
+                <p><strong>Dr Barun Kumar Nayak</strong><br>
+Secretary - Glaucoma Society of India<br>
+PD Hinduja Hospital &amp; MRC,Veer Savarkar Marg, Mahim, Mumbai 400016. </p>
+
+                </div>
+                <p><strong>Note: </strong></p>
+                <ul class="list ml-20">
+  <li>Charges are inclusive of GST</li>
+  <li>Pre-Registration Strictly closes on 05/09/2019</li>
+  <li>Please note that Wet Lab Participation is on  First-Come-First-Serve Basis</li>
+  <li>On Registration candidate can click on the  clinical examination for respective day and trainer&nbsp; as one facilitator for AT &amp; Gonio for all  three days&nbsp; is fixed.</li>
+  <li>For the surgical wet lab combination of  different facilitator made for Trab for all 3 hrs&nbsp; keeping the facilitator constant for ologen  and AADI.</li>
 </ul>
 
 
@@ -85,8 +81,6 @@
         <item>https://glaucomasociety.in/images/8.jpg</item>
         <item>https://glaucomasociety.in/images/9.jpg</item>
         <item>https://glaucomasociety.in/images/10.jpg</item>
-        
-
 
 
     </array>
@@ -129,7 +123,6 @@
     <array name="tabname">
         <item>HOME</item>
         <item>REGISTRATION</item>
-        <item>FACULTY</item>
         <item>VENUE</item>
         <item>OFFICE BEARERS</item>
         <item>K/W YOUR REGISTRATION</item>
@@ -333,5 +326,5 @@ Email: shivani.srivastav@icegroupindia.com
     </string>
     <string name="hint_uname">Email</string>
     <string name="hint_password">Mobile</string>
-    <string name="conference_venue"><h2 class="text-uppercase">Conference Venue</h2></string>
+    <string name="conference_venue"><h2 class="text-uppercase">Ramada Lucknow Hotel &amp; Convention Centre</h2></string>
 </resources>

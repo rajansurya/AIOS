@@ -38,8 +38,7 @@ class Venue : FragmentActivity(), OnMapReadyCallback {
             }
         }*/
 
-
-         val sydney = LatLng(28.6213501, 77.2174978)
+         val sydney = LatLng(26.664924, 80.8031743)
  //        map?.setMyLocationEnabled(true)
          map?.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 15f))
          map?.addMarker(MarkerOptions().title("Meridien Commercial Tower").position(sydney))

@@ -3,7 +3,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dashimg">
+    android:background="@drawable/copy2">
 
     <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -55,7 +55,7 @@
                 android:layout_marginBottom="7dp"
                 android:contentDescription="@string/app_name"
                 android:padding="1dp"
-                android:src="@mipmap/cirlce_appicon_round" />
+                android:src="@drawable/sp_icon" />
 
             <TextView
                 android:layout_width="match_parent"

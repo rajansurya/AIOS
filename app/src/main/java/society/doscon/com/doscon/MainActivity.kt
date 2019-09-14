@@ -1,40 +1,31 @@
 package society.doscon.com.doscon
 
-import android.app.Dialog
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
-import android.net.Uri
+import android.graphics.Color
 import android.os.Bundle
-import android.support.v4.app.*
+import android.support.v4.app.DialogFragment
+import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
+import android.support.v4.app.FragmentPagerAdapter
 import android.support.v4.view.ViewPager
-import android.support.v7.app.AlertDialog
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.text.Html
 import android.text.TextUtils
 import android.view.Gravity
+import android.view.LayoutInflater
 import android.view.View
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.header_view.*
-import org.json.JSONObject
-import android.view.animation.AnimationSet
-import android.view.animation.AlphaAnimation
+import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.ImageView
-import com.skyfishjy.library.RippleBackground
-import android.content.DialogInterface
-import android.graphics.Color
-import android.opengl.Visibility
-import android.support.v4.view.GravityCompat
-import android.support.v4.widget.DrawerLayout
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import android.webkit.WebChromeClient
-import android.webkit.WebView
 import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.header_view.*
 import org.json.JSONArray
+import org.json.JSONObject
 
 
 class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menuckick {
@@ -57,7 +48,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
             intent.putExtra("DATA", restoredText)
             startActivity(intent)
             menuposition = getResources().getStringArray(R.array.tabname);
-            menuposition.set(9, "LOGOUT")
+            menuposition.set(8, "LOGOUT")
         } else {
             menuposition = getResources().getStringArray(R.array.tabname);
         }
@@ -96,7 +87,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
     public fun onClickitem(view: View) {
         when (view?.id) {
             R.id.officebear -> {
-                startActivity(Intent(this, Commitee::class.java))
+                var inyeny: Intent = Intent(this, ShowPDF::class.java)
+                inyeny.putExtra("which", "")
+                startActivity(inyeny)
             }
             R.id.officebear2 -> {
                 startActivity(Intent(this, RegistrationActivity::class.java))
@@ -159,25 +152,25 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                  var intent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.eventreg.icegroupindia.com/doscon18/abstract-login.php"))
                  startActivity(intent)
              }*/
-            2 -> {
+            /*2 -> {
                 startActivity(Intent(this, Commitee::class.java))
-            }
+            }*/
             /*3 -> {
     startActivity(Intent(this, Exhibation::class.java))
     }*/
-            3 -> {
+            2 -> {
                 startActivity(Intent(this, Venue::class.java))
             }
             /*6 -> {
                 startActivity(Intent(this, Tour::class.java))
             }*/
 
-            4 -> {
+            3 -> {
                 var inyeny: Intent = Intent(this, Accomodation::class.java)
                 inyeny.putExtra("which", "bearer")
                 startActivity(inyeny)
             }
-            5 -> {
+            4 -> {
                 var prefs: SharedPreferences = getSharedPreferences("MY_PREFS_NAME", AppCompatActivity.MODE_PRIVATE);
                 var restoredText = prefs.getString("DATA", null);
                 if (!TextUtils.isEmpty(restoredText)) {
@@ -189,19 +182,19 @@ class MainActivity : AppCompatActivity(), View.OnClickListener, Menuitem.menucki
                     startActivity(intent)
                 }
             }
-            6 -> {
+            5 -> {
                 var inyeny: Intent = Intent(this, ShowPDF::class.java)
                 inyeny.putExtra("which", "")
                 startActivity(inyeny)
             }
-            7 -> {
+            6 -> {
                 startActivity(Intent(this, Contact::class.java))
             }
-            8 -> {
+            7 -> {
                 startActivity(Intent(this, NotificationAPI::class.java))
             }
-            9 -> {
-                if (menuposition[9].equals("LOGOUT")) {
+            8 -> {
+                if (menuposition[8].equals("LOGOUT")) {
                     getSharedPreferences("MY_PREFS_NAME", Context.MODE_PRIVATE).edit().clear().commit()
                     var intent = Intent(this, Login::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)

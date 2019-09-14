@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/height_color"
     android:orientation="vertical">
 
     <include layout="@layout/header_other" />
@@ -9,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"
-        android:background="@drawable/book" />
+        android:layout_marginTop="20dp"
+        android:src="@drawable/book" />
 
     <WebView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/webpagesLinear"
