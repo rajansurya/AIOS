@@ -24,7 +24,7 @@
             android:layout_marginTop="5dp"
             android:background="@drawable/round_tag"
             android:padding="5dp"
-            android:text="Welcome to Glaucoknow,Lucknow"
+            android:text="Welcome to Glaucoknow, Lucknow"
             android:textColor="@color/white"
             android:textSize="16sp" />
     </RelativeLayout>
@@ -147,7 +147,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="PROGRAM"
+                    android:text="PROGRAMME"
                     android:textColor="@color/white" />
             </LinearLayout>
 
@@ -203,7 +203,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="HIGHLIGHT"
+                    android:text="HIGHLIGHTS"
                     android:textColor="@color/white" />
             </LinearLayout>
             <LinearLayout

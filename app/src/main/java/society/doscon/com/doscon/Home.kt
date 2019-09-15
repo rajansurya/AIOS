@@ -80,7 +80,7 @@ class Home : Fragment(), SignUpAPICall.CallBackToClass {
         } catch (e: IllegalAccessException) {
         }
 
-        generateticket = GenerateTicketAdapter(context!!, retailerList)
+        generateticket = GenerateTicketAdapterHome(context!!, retailerList)
         mLayoutManagerL = LinearLayoutManager(activity)
         val dividerItemDecoration = DividerItemDecoration(notification_list.getContext(),
                 mLayoutManagerL.getOrientation())
@@ -96,7 +96,7 @@ class Home : Fragment(), SignUpAPICall.CallBackToClass {
 
     }
 
-    var generateticket: GenerateTicketAdapter? = null
+    var generateticket: GenerateTicketAdapterHome? = null
     var retailerList = ArrayList<NotificationData>()
     override fun returnDataToClass(tag: String?, data: String?) {
         println(data)
