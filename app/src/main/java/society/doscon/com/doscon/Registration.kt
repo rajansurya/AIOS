@@ -100,7 +100,7 @@ class Registration : Fragment() {
         webpagesLinear.getSettings().setDomStorageEnabled(true);
         webpagesLinear.getSettings().setLoadsImagesAutomatically(true);
         webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-        webpagesLinear.loadData(getString(R.string.imp_note), "text/html; charset=utf-8", "utf-8");
+//        webpagesLinear.loadData(getString(R.string.imp_note), "text/html; charset=utf-8", "utf-8");
 
 
     }

@@ -22,7 +22,7 @@ class Contact:Activity(){
         webpagesLinear.getSettings().setDomStorageEnabled(true);
         webpagesLinear.getSettings().setLoadsImagesAutomatically(true);
         webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-        webpagesLinear.loadData(getString(R.string.contact), "text/html; charset=utf-8", "utf-8");
+        //webpagesLinear.loadData(getString(R.string.contact), "text/html; charset=utf-8", "utf-8");
 
     }
 }

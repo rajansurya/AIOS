@@ -30,7 +30,7 @@ lateinit var webpagesLinear:WebView
         webpagesLinear.getSettings().setLoadsImagesAutomatically(true);
         webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         //webpagesLinear.addView(webview)
-        webpagesLinear.loadData(getString(R.string.invitation), "text/html; charset=utf-8", "utf-8");
+//        webpagesLinear.loadData(getString(R.string.invitation), "text/html; charset=utf-8", "utf-8");
         return view;
     }
 }

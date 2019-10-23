@@ -30,7 +30,7 @@ class Commitee : Activity() {
         windowManager?.defaultDisplay?.getMetrics(displayMetrics)
         val width = displayMetrics.widthPixels
         val height = displayMetrics.heightPixels
-        fiilliste = getResources().getStringArray(R.array.img_arr_commiti)
+//        fiilliste = getResources().getStringArray(R.array.img_arr_commiti)
         home_adapter = Home_Adapter(applicationContext, fiilliste.toCollection(ArrayList<String>()), width, height, "commity")
         gridview_cyc?.layoutManager = CustomGridLayoutManager(this, 2)
         gridview_cyc?.addItemDecoration(SpacesItemDecoration(1))

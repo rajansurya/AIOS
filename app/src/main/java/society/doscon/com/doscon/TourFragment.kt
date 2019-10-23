@@ -35,7 +35,7 @@ class TourFragment : Fragment() {
 //        webpagesLinear.getSettings().setLayoutAlgorithm(WebSettings.LayoutAlgorithm.SINGLE_COLUMN);
         webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
         var st:String=""
-        if (positionl == 0)
+        /*if (positionl == 0)
            st= getString(R.string.tour_1)
         if (positionl == 1)
             st= getString(R.string.tour_2)
@@ -46,7 +46,7 @@ class TourFragment : Fragment() {
         if (positionl == 4)
             st= getString(R.string.tour_5)
         if (positionl == 5)
-            st= getString(R.string.tour_6)
+            st= getString(R.string.tour_6)*/
 
             webpagesLinear.loadData(st, "text/html; charset=utf-8", "utf-8");
         return view;

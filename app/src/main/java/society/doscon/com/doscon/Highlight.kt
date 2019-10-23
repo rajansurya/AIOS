@@ -17,7 +17,8 @@ class Highlight:FragmentActivity(), SignUpAPICall.CallBackToClass{
 try {
     val reader = JSONObject(data)
     val arr=reader.getJSONArray("Data").getJSONObject(0).getString("Description")
-    val webContent = "<html><head><link href=\"stylemain.css\" rel=\"stylesheet\" type=\"text/css\"> " +
+    val webContent = "<html><head>" +
+            "<link href=\"stylemain.css\" rel=\"stylesheet\" type=\"text/css\"> " +
             "<link href=\"bootstrapmin.css\" rel=\"stylesheet\" type=\"text/css\">" +
             "<link href=\"animate.css\" rel=\"stylesheet\" type=\"text/css\">" +
             "<link href=\"cssplugincollections.css\" rel=\"stylesheet\" type=\"text/css\">" +
@@ -83,5 +84,29 @@ try {
 
 
     }
-
+fun returnData():String {
+    return "\"<link href=\\\"stylemain.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\"> \" +\n" +
+            "            \"<link href=\\\"bootstrapmin.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"animate.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"cssplugincollections.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"jqueryui.min.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"menuzordstrip.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"style-main.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"preloader.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"custombootstrapmarginpadding.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"responsive.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"settings.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"layers.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"navigation.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "            \"<link href=\\\"themeskinblue.css\\\" rel=\\\"stylesheet\\\" type=\\\"text/css\\\">\" +\n" +
+            "\n" +
+            "            \"<script src=\\\"jquery-2.2.0.min.js\\\"></script>\"+\n" +
+            "            \"<script src=\\\"jqueryui.min.js\\\"></script>\"+\n" +
+            "            \"<script src=\\\"bootstrap.min.js\\\"></script>\"+\n" +
+            "            \"<script src=\\\"jquery.marquee.js\\\"></script>\"+\n" +
+            "            \"<script src=\\\"jquery.marquee.min.js\\\"></script>\"+\n" +
+            "            \"<script src=\\\"jqueryplugincollection.js\\\"></script>\"+\n" +
+            "            \"<script src=\\\"jquery.themepunch.tools.min.js\\\"></script>\"+\n" +
+            "            \"<script src=\\\"jquery.themepunch.revolution.min.js\\\"></script>\""
+}
 }

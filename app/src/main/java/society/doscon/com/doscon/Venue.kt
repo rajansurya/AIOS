@@ -73,7 +73,7 @@ class Venue : FragmentActivity(), OnMapReadyCallback {
         webpagesLinear.getSettings().setDomStorageEnabled(true);
         webpagesLinear.getSettings().setLoadsImagesAutomatically(true);
         webpagesLinear.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
-        webpagesLinear.loadData(resources.getString(R.string.venue), "text/html; charset=utf-8", "utf-8");
+//        webpagesLinear.loadData(resources.getString(R.string.venue), "text/html; charset=utf-8", "utf-8");
         title_name.text = "VENUE"
         back.setOnClickListener { this@Venue.finish() }
 //        requestPermission(Manifest.permission.ACCESS_FINE_LOCATION, LOCATION_REQUEST_CODE)

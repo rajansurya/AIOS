@@ -68,13 +68,13 @@ internal class Home_Adapter(var mContext: Context, var service: ArrayList<String
     init {
         var ta: Array<String>? = null
         if (whichsec.equals("commity")) {
-            ta = mContext.getResources().getStringArray(R.array.nameimg);
+//            ta = mContext.getResources().getStringArray(R.array.nameimg);
         } else if (whichsec.equals("member")) {
-            ta = mContext.getResources().getStringArray(R.array.namemember);
+//            ta = mContext.getResources().getStringArray(R.array.namemember);
         } else if (whichsec.equals("representative")) {
-            ta = mContext.getResources().getStringArray(R.array.representative);
+//            ta = mContext.getResources().getStringArray(R.array.representative);
         } else if (whichsec.equals("exmember")) {
-            ta = mContext.getResources().getStringArray(R.array.exmember);
+//            ta = mContext.getResources().getStringArray(R.array.exmember);
         }
         colorlist.addAll(ta!!.toCollection(ArrayList()))
     }
