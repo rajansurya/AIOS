@@ -1,25 +1,26 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     android:orientation="vertical">
 
     <include layout="@layout/header_other" />
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_gravity="center_horizontal"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="2dp"
-        android:visibility="gone"
-        android:src="@drawable/book" />
+        android:src="@drawable/book"
+        android:visibility="gone" />
 
     <WebView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/webpagesLinear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="0dp"
-        android:scrollbars="none"
-        />
+        android:layout_marginLeft="10dp"
+        android:scrollbars="none" />
 
     <ProgressBar
         style="?android:attr/progressBarStyleLarge"
